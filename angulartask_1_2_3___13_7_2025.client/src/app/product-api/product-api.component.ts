@@ -13,16 +13,19 @@ export class ProductAPIComponent {
   ngOnInit() {
     this.Get_Products();
   }
-  Products: any;
+  ProductsCategory: any=[];
   Category_Id: any;
   Get_Products() {
     this.Category_Id = this._active.snapshot.paramMap.get('id');
-
+    console.log('Category_Id:', this.Category_Id);
     this.service.All_Products().subscribe(
-      (products) => {
-                    this.Products = products.filter((x: any) => x.category_id == this.Category_Id);
-                    }
+      (products) =>
+      {
+        console.log('API Response:', products);
+        this.ProductsCategory = products.filter((x: any) => x.categoryId == this.Category_Id);
+        console.log('Filtered Products:', this.ProductsCategory);
+              }
+    );
 
-                    );
-}
+  }
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MockAPIService } from '../Services/mock-api.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-register-api',
@@ -7,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './register-api.component.css'
 })
 export class RegisterAPIComponent {
+
+  constructor(private service: MockAPIService, private _route: ActivatedRoute) { }
+
+  ngOnit() { }
+
+  users: any
+ 
+
+
 
 }

@@ -6,6 +6,8 @@ import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { CategoryAPIComponent } from './category-api/category-api.component';
 import { ProductAPIComponent } from './product-api/product-api.component';
+import { LoginAPIComponent } from './login-api/login-api.component';
+import { RegisterAPIComponent } from './register-api/register-api.component';
 const routes: Routes = [
   //-------------------------- Task 1 --------------------------
   { path: 'sign_up', component: SignUpComponent },
@@ -14,8 +16,10 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent },
   //-------------------------- Task 2 --------------------------
   { path: 'All_Categories', component: CategoryAPIComponent },
-  { path: "ProductAPIComponent/:id", component: ProductAPIComponent }
-
+  { path: "CategoryProducts/:id", component: ProductAPIComponent },
+  //-------------------------- Task 3 --------------------------
+  { path: 'Login_API', component: LoginAPIComponent },
+  { path: 'Register_API', component: RegisterAPIComponent }
 ];
 
 @NgModule({

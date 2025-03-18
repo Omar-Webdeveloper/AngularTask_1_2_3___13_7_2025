@@ -14,11 +14,11 @@ export class MockAPIService {
   All_Products(): Observable<any> {
     return this.http.get<any>('https://67cd64b6dd7651e464ee3d63.mockapi.io/products'); 
   }
-  AddNewUser(data: any) {
+  Post_To_AddNewUser(data: any): Observable<any>  {
     return this.http.post<any>('https://67d293ba90e0670699be2925.mockapi.io/user', data);
   }
 
-  GetAllUsers() {
+  GetAllUsers_To_Login(): Observable<any>  {
     return this.http.get('https://67d293ba90e0670699be2925.mockapi.io/user');
   }
 }
