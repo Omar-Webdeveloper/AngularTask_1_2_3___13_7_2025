@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-test',
+  selector: 'app-child',
   standalone: false,
-  templateUrl: './test.component.html',
-  styleUrl: './test.component.css'
+  templateUrl: './child.component.html',
+  styleUrl: './child.component.css'
 })
-export class TestComponent {
+export class ChildComponent {
   @Input() message!: string; // Decorator to receive data from parent
- 
+
 }

@@ -1,4 +1,4 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-<app-test [message]="parentMessage"></app-test>
+<p>Price: {{ price | currency:'JOD':'symbol':'1.2-2' }}</p>

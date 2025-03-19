@@ -12,11 +12,14 @@ export class RegisterAPIComponent {
 
   constructor(private service: MockAPIService, private _route: ActivatedRoute) { }
 
-  ngOnit() { }
+  ngOnInit() { }
 
-  users: any
- 
+  adduser(data: any) {
+    this.service.Post_To_AddNewUser(data).subscribe(() => {
+      alert("added")
 
+    })
+  }
 
 
 }

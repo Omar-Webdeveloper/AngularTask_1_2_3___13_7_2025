@@ -14,12 +14,13 @@ import { CategoryAPIComponent } from './category-api/category-api.component';
 import { ProductAPIComponent } from './product-api/product-api.component';
 import { RegisterAPIComponent } from './register-api/register-api.component';
 import { LoginAPIComponent } from './login-api/login-api.component';
-import { TestComponent } from './test/test.component';
 import { GetcategoryComponent } from './Admin/getcategory/getcategory.component';
 import { GetproductComponent } from './Admin/getproduct/getproduct.component';
 import { AddcategoryComponent } from './Admin/addcategory/addcategory.component';
 import { AddproductComponent } from './Admin/addproduct/addproduct.component';
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { ParnetComponent } from './parnet/parnet.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +35,13 @@ import { DashboardComponent } from './Admin/dashboard/dashboard.component';
     ProductAPIComponent,
     RegisterAPIComponent,
     LoginAPIComponent,
-    TestComponent,
     GetcategoryComponent,
     GetproductComponent,
     AddcategoryComponent,
     AddproductComponent,
-    DashboardComponent
+    DashboardComponent,
+    ParnetComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
