@@ -16,7 +16,8 @@ interface WeatherForecast {
 })
 export class AppComponent implements OnInit {
   public forecasts: WeatherForecast[] = [];
-
+  parentMessage: string = 'Hello from Parent Component!';
+  //parentMessage = 'Hello from Parent Component!';
   constructor(private http: HttpClient) {}
 
   ngOnInit() {

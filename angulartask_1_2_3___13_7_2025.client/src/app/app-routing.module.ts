@@ -8,6 +8,12 @@ import { CategoryAPIComponent } from './category-api/category-api.component';
 import { ProductAPIComponent } from './product-api/product-api.component';
 import { LoginAPIComponent } from './login-api/login-api.component';
 import { RegisterAPIComponent } from './register-api/register-api.component';
+import { TestComponent } from './test/test.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { GetcategoryComponent } from './Admin/getcategory/getcategory.component';
+import { GetproductComponent } from './Admin/getproduct/getproduct.component';
+import { AddcategoryComponent } from './Admin/addcategory/addcategory.component';
+import { AddproductComponent } from './Admin/addproduct/addproduct.component';
 const routes: Routes = [
   //-------------------------- Task 1 --------------------------
   { path: 'sign_up', component: SignUpComponent },
@@ -19,7 +25,20 @@ const routes: Routes = [
   { path: "CategoryProducts/:id", component: ProductAPIComponent },
   //-------------------------- Task 3 --------------------------
   { path: 'Login_API', component: LoginAPIComponent },
-  { path: 'Register_API', component: RegisterAPIComponent }
+  { path: 'Register_API', component: RegisterAPIComponent },
+  //-------------------------- test --------------------------
+  { path: 'test', component: TestComponent },
+  //-------------------------- Task 4 --------------------------
+  {
+    path: 'Admin_Dashboard', component: DashboardComponent, children:
+      [
+        { path: 'get_category', component: GetcategoryComponent },
+        { path: 'get_product', component: GetproductComponent },
+        { path: 'add_category', component: AddcategoryComponent },
+        { path: 'add_product', component: AddproductComponent }
+    ]
+    
+  }
 ];
 
 @NgModule({

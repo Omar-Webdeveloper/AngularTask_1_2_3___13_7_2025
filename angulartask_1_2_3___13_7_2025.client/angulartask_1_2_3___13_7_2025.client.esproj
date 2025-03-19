@@ -8,6 +8,7 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\angulartask_1_2_3___13_7_2025.client\browser\</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="src\app\Admin\AdminServices\" />
     <Folder Include="src\app\Services\" />
   </ItemGroup>
 </Project>
