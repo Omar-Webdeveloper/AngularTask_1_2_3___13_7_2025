@@ -14,6 +14,8 @@ import { GetproductComponent } from './Admin/getproduct/getproduct.component';
 import { AddcategoryComponent } from './Admin/addcategory/addcategory.component';
 import { AddproductComponent } from './Admin/addproduct/addproduct.component';
 import { ParnetComponent } from './parnet/parnet.component';
+import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
+import { EditproductComponent } from './Admin/editproduct/editproduct.component';
 const routes: Routes = [
   //-------------------------- Task 1 --------------------------
   { path: 'sign_up', component: SignUpComponent },
@@ -36,7 +38,9 @@ const routes: Routes = [
         { path: 'get_category', component: GetcategoryComponent },
         { path: 'get_product', component: GetproductComponent },
         { path: 'add_category', component: AddcategoryComponent },
-        { path: 'add_product', component: AddproductComponent }
+        { path: 'add_product', component: AddproductComponent },
+        { path: 'Edit_category/:id', component: EditcategoryComponent },
+        { path: 'Edit_product/:id', component: EditproductComponent }
     ]
     
   }

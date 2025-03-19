@@ -21,6 +21,8 @@ import { AddproductComponent } from './Admin/addproduct/addproduct.component';
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
 import { ParnetComponent } from './parnet/parnet.component';
 import { ChildComponent } from './child/child.component';
+import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
+import { EditproductComponent } from './Admin/editproduct/editproduct.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ChildComponent } from './child/child.component';
     AddproductComponent,
     DashboardComponent,
     ParnetComponent,
-    ChildComponent
+    ChildComponent,
+    EditcategoryComponent,
+    EditproductComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
