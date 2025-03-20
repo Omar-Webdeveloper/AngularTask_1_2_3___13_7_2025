@@ -23,6 +23,14 @@ import { ParnetComponent } from './parnet/parnet.component';
 import { ChildComponent } from './child/child.component';
 import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
 import { EditproductComponent } from './Admin/editproduct/editproduct.component';
+import { Parnet1Component } from './parnet1/parnet1.component';
+import { Child1Component } from './child1/child1.component';
+import { Lesson1Component } from './ngOnInit/lesson1/lesson1.component';
+import { Lesson2Component } from './ngOnDestroy/lesson2/lesson2.component';
+import { InputdemoComponent } from './inputdemo/inputdemo.component';
+import { OutputdemoComponent } from './outputdemo/outputdemo.component';
+import { InputchildComponent } from './inputchild/inputchild.component';
+import { OutputchildComponent } from './outputchild/outputchild.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +53,15 @@ import { EditproductComponent } from './Admin/editproduct/editproduct.component'
     ParnetComponent,
     ChildComponent,
     EditcategoryComponent,
-    EditproductComponent
+    EditproductComponent,
+    Parnet1Component,
+    Child1Component,
+    Lesson1Component,
+    Lesson2Component,
+    InputdemoComponent,
+    OutputdemoComponent,
+    InputchildComponent,
+    OutputchildComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,

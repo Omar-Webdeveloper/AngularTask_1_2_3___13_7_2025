@@ -1,2 +1,7 @@
-<p>parnet works!</p>
-<app-child [message]="parentMessage"></app-child>
+<!--<p>parnet works!</p>
+<app-child [message]="parentMessage"></app-child>-->
+<div>
+  <h3>Parent Component</h3>
+   Listening to the child's custom event using (childEvent) 
+  <app-child (childEvent)="receiveMessageFromChild($event)"></app-child>
+</div>

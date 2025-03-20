@@ -16,6 +16,13 @@ import { AddproductComponent } from './Admin/addproduct/addproduct.component';
 import { ParnetComponent } from './parnet/parnet.component';
 import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
 import { EditproductComponent } from './Admin/editproduct/editproduct.component';
+//Test ngOnInit
+//import { Lesson1Component } from './ngOnInit/lesson1/lesson1.component';
+//import { ParnetComponent } from './ngOnInit/parnet/parnet.component';
+//Test ngOnDestroy
+//import { Lesson2Component } from './ngOnDestroy/lesson2/lesson2.component';
+//import { ParnetComponent } from './ngOnDestroy/parnet/parnet.component';
+
 const routes: Routes = [
   //-------------------------- Task 1 --------------------------
   { path: 'sign_up', component: SignUpComponent },
@@ -30,7 +37,18 @@ const routes: Routes = [
   { path: 'Register_API', component: RegisterAPIComponent },
   //-------------------------- test --------------------------
   { path: 'Show_me', component: ParnetComponent },
-  
+  //{
+  //  path: 'ngOnInit', component: Lesson1Component, children:
+  //    [
+  //      { path: 'demo1', component: ParnetComponent }
+  //    ]
+  //},
+  //{
+  //  path: 'ngOnDestroy', component: Lesson2Component, children:
+  //    [
+  //      { path: 'demo2', component: ParnetComponent }
+  //    ]
+  //},
   //-------------------------- Task 4 --------------------------
   {
     path: 'Admin_Dashboard', component: DashboardComponent, children:
@@ -42,8 +60,9 @@ const routes: Routes = [
         { path: 'Edit_category/:id', component: EditcategoryComponent },
         { path: 'Edit_product/:id', component: EditproductComponent }
     ]
-    
   }
+
+  //-------------------------- Task 5 --------------------------
 ];
 
 @NgModule({

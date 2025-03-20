@@ -9,6 +9,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\Admin\AdminServices\" />
+    <Folder Include="src\app\ngOnDestroy\" />
+    <Folder Include="src\app\ngAfterViewChecked\" />
+    <Folder Include="src\app\ngAfterViewInit\" />
+    <Folder Include="src\app\ngAfterContentChecked\" />
+    <Folder Include="src\app\ngAfterContentInit\" />
+    <Folder Include="src\app\ngDoCheck\" />
+    <Folder Include="src\app\ngOnChanges\" />
+    <Folder Include="src\app\ngOnInit\" />
     <Folder Include="src\app\Services\" />
   </ItemGroup>
 </Project>

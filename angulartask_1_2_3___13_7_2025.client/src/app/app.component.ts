@@ -15,7 +15,23 @@ interface WeatherForecast {
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  price = 50;
+  //price = 50;
+
+  //ngOnInit
+  //message: string = ''; // Default value for the message
+
+  //constructor() {
+  //  console.log('Constructor: Component created');
+  //}
+
+  //ngOnInit(): void {
+  //  console.log('ngOnInit: Initialization logic here');
+  //  // Initialization logic (e.g., setting default values, fetching data)
+  //  this.message = 'Hello, this message was set in ngOnInit!';
+  //}
+
+
+
   public forecasts: WeatherForecast[] = [];
   constructor(private http: HttpClient) {}
 

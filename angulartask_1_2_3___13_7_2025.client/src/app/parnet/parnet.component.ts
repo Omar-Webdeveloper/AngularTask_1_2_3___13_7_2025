@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './parnet.component.css'
 })
 export class ParnetComponent {
-  parentMessage: string = 'Hello from Parent Component!';
-
+  //parentMessage: string = 'Hello from Parent Component!';
+  // This method handles the event emitted by the child
+  receiveMessageFromChild(childMessage: string) {
+    alert(`Message from Child: ${childMessage}`);
+  }
 }

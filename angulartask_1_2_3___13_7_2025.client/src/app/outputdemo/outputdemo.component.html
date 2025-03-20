@@ -1,0 +1,5 @@
+<p>outputdemo works!</p>
+<app-outputchild (newItemEvent)="addItem($event)"></app-outputchild>
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>

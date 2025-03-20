@@ -1,0 +1,8 @@
+<p>parnet works!</p>
+<div>
+  <h3>Parent Component</h3>
+  <p>Sending to Child: {{ parentMessage }}</p>
+  <button (click)="changeMessage()">Change Message</button>
+
+  <app-child [message]="parentMessage"></app-child>
+</div>
