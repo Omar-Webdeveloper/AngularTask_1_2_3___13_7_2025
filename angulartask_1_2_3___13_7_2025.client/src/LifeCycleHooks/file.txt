@@ -1,0 +1,26 @@
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| Lifecycle Hook        | Purpose                                       | When It Runs                                | Use Cases                                   |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| ngOnChanges           | Responds to changes in @Input() properties.   | Called whenever input-bound properties     | React to property changes and                |
+|                       |                                               | change (before ngOnInit).                  | retrieve current and previous values.        |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| ngOnInit              | Initializes the component or directive.       | Called once, after the first ngOnChanges.  | Set up initial values and fetch              |
+|                       |                                               |                                            | data from APIs.                              |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| ngDoCheck             | Custom change detection logic.                | Called during every change detection cycle.| Manually track changes in objects or arrays. |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| ngAfterContentInit    | Responds after content projection             | Called once, after Angular projects        | Initialize projected content using           |
+|                       | (<ng-content>) is initialized.                | external content into the component.       | <ng-content>.                                |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| ngAfterContentChecked | Responds after every check of projected       | Called after ngAfterContentInit and        | Handle updates or changes in projected       |
+|                       | content.                                      | during every change detection cycle.       | content dynamically.                         |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| ngAfterViewInit       | Responds after component view and child views | Called once, after the component's view    | Access child components or DOM elements      |
+|                       | are initialized.                              | and child views are fully initialized.     | for manipulation.                            |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| ngAfterViewChecked    | Responds after every check of the component   | Called after ngAfterViewInit and during    | Act on updates in the component's            |
+|                       | view and child views.                         | every change detection cycle.              | view or child views.                         |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
+| ngOnDestroy           | Cleanup logic before component destruction.   | Called once, just before Angular destroys  | Unsubscribe observables, detach listeners,   |
+|                       |                                               | the component.                             | clear timeouts, and free resources.          |
++-----------------------+-----------------------------------------------+--------------------------------------------+----------------------------------------------+
