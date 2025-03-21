@@ -16,6 +16,10 @@ import { AddproductComponent } from './Admin/addproduct/addproduct.component';
 import { ParnetComponent } from './parnet/parnet.component';
 import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
 import { EditproductComponent } from './Admin/editproduct/editproduct.component';
+import { InputdemoComponent } from './inputdemo/inputdemo.component';
+import { OutputdemoComponent } from './outputdemo/outputdemo.component';
+import { ProfileComponent } from './profile/profile.component';
+import { TaskLoginComponent } from './task-login/task-login.component';
 //Test ngOnInit
 //import { Lesson1Component } from './ngOnInit/lesson1/lesson1.component';
 //import { ParnetComponent } from './ngOnInit/parnet/parnet.component';
@@ -37,6 +41,10 @@ const routes: Routes = [
   { path: 'Register_API', component: RegisterAPIComponent },
   //-------------------------- test --------------------------
   { path: 'Show_me', component: ParnetComponent },
+  { path: 'input', component: InputdemoComponent },
+  { path: 'output', component: OutputdemoComponent },
+  { path: 'Task_5', component:TaskLoginComponent },
+  { path: 'Profile', component: ProfileComponent },
   //{
   //  path: 'ngOnInit', component: Lesson1Component, children:
   //    [

@@ -21,4 +21,7 @@ export class MockAPIService {
   GetAllUsers_To_Login(): Observable<any>  {
     return this.http.get('https://67d293ba90e0670699be2925.mockapi.io/user');
   }
+  Update_User(user: any): Observable<any> {
+    return this.http.put(`https://67d293ba90e0670699be2925.mockapi.io/user/${user.id}`, user); // Update user by ID
+  }
 }

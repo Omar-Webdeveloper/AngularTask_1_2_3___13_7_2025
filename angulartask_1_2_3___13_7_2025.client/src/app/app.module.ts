@@ -31,6 +31,9 @@ import { InputdemoComponent } from './inputdemo/inputdemo.component';
 import { OutputdemoComponent } from './outputdemo/outputdemo.component';
 import { InputchildComponent } from './inputchild/inputchild.component';
 import { OutputchildComponent } from './outputchild/outputchild.component';
+import { TaskLoginComponent } from './task-login/task-login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +64,10 @@ import { OutputchildComponent } from './outputchild/outputchild.component';
     InputdemoComponent,
     OutputdemoComponent,
     InputchildComponent,
-    OutputchildComponent
+    OutputchildComponent,
+    TaskLoginComponent,
+    ProfileComponent,
+    EditprofileComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,

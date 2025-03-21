@@ -1,0 +1,20 @@
+<p>profile works!</p>
+<div class="profile-container">
+  <h3>User Profile</h3>
+  <div *ngIf="loggedInUser; else noUser">
+    <p><strong>Name:</strong> {{ loggedInUser.name }}</p>
+    <p><strong>Email:</strong> {{ loggedInUser.email }}</p>
+    <p><strong>ID:</strong> {{ loggedInUser.id }}</p>
+    <button (click)="openEditPopup()">Edit Profile</button>
+
+    <!-- Edit Popup -->
+    <app-editprofile *ngIf="showEditPopup"
+                    [userData]="loggedInUser"
+                    (userUpdated)="handleUpdatedUser($event)">
+    </app-editprofile>
+  </div>
+
+  <ng-template #noUser>
+    <p>No user data available.</p>
+  </ng-template>
+</div>
